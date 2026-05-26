@@ -1,47 +1,17 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+<script setup>
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  <div style="text-align: center; padding: 50px; font-family: Arial">
+    <h1>Lab 07: Automated Deployment</h1>
+    <h2>你的名字</h2>
+    <p>学号：你的学号</p>
+    <p>这个页面是通过 GitHub Actions 自动部署的 🚀</p>
+    <p>部署时间：{{ new Date().toLocaleString() }}</p>
+  </div>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
+h1 { color: #42b883; }
+h2 { color: #35495e; }
 </style>
